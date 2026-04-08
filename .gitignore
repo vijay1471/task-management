@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+
+# Stop ignoring specific sub-builds; the top-level build/ handles it
+# If you have nested projects, Gradle handles those as well
+
+# IDE - IntelliJ
+.idea/
+*.iml
+out/
+
+# IDE - VS Code
+.vscode/
+
+# IDE - Eclipse/STS
+.settings/
+.project
+.classpath
+bin/
