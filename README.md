@@ -89,7 +89,7 @@ GET /api/tasks
 
 * `page` → Page number (default: 0)
 * `size` → Page size (default: 10)
-* `status` → Filter by task status (e.g., PENDING, COMPLETED)
+* `status` → Filter by task status (e.g., PENDING, IN_PROGRESS, DONE)
 
 #### Default Sorting:
 
@@ -159,6 +159,7 @@ http://localhost:8080/h2-console
 
 * `dueDate` must be in format: `yyyy-MM-dd`
 * `dueDate` must be a future date
+* `status` can be one of: `PENDING`, `IN_PROGRESS`, `DONE` or null (defaults to `PENDING`)
 
 ---
 
@@ -167,20 +168,5 @@ http://localhost:8080/h2-console
 * Pagination and filtering headers are optional
 * If not provided, default values will be used
 * Application uses in-memory DB → data resets on restart
-
----
-
-## 🚀 Future Enhancements
-
-* Add authentication (JWT)
-* Add Swagger/OpenAPI documentation
-* Persistent database (MySQL/PostgreSQL)
-* Advanced filtering & sorting
-
----
-
-## 👨‍💻 Author
-
-Developed as part of a Spring Boot practice project for building REST APIs with proper validation, pagination, and transaction management.
 
 ---
